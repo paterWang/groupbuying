@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/nomal_view"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+       >
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="100dp"
+            android:scaleType="fitXY"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试店铺"
+                android:textColor="@color/txt_big"
+                android:textSize="12sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_type"
+                android:layout_width="match_parent"
+                android:layout_marginRight="45dp"
+                android:layout_centerVertical="true"
+                android:lines="1"
+                android:drawableLeft="@mipmap/icon_weizhi"
+                android:drawablePadding="5dp"
+                android:layout_height="wrap_content"
+                tools:text="广东省深圳市"
+                android:textColor="#353535"
+                android:textSize="11sp"/>
+
+                <TextView
+                    android:id="@+id/item_price"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="20km"
+                    android:textColor="@color/txt_blue"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="#ebebeb"/>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="2dp"
+                 android:gravity="center_vertical"
+                 android:orientation="horizontal"
+                 android:layout_height="wrap_content">
+
+                 <TextView
+                     android:id="@+id/item_juli"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_centerVertical="true"
+                     android:text="附近100米"
+                     android:textColor="@color/text_gray"
+                     android:textSize="12sp"/>
+             </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f2f2f2"/>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="22dp"
+    style="?android:attr/borderlessButtonStyle"
+    android:text="测试"
+    android:layout_marginTop="@dimen/dp_10"
+    android:textColor="@color/txt_middle"
+    android:id="@+id/bt_text"
+    android:background="@drawable/grid_button_shape_normal"
+    >
+
+</Button>
+</RelativeLayout>

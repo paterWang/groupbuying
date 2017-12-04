@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    tools:context="com.feitianzhu.fu700.shop.ui.ShopReportActivity"
+    >
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="183dp"
+      android:id="@+id/content"
+      android:background="@color/white"
+      android:gravity="left"
+      android:hint="请如实填写举报理由，我们会尽快处理(必填)"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:paddingTop="20dp"
+      android:textColorHint="@color/sf_hint_color"
+      android:textSize="@dimen/sf_font_small"
+      />
+  <TextView
+      android:id="@+id/btn_submit"
+      android:layout_width="match_parent"
+      android:layout_height="44dp"
+      android:layout_marginLeft="35dp"
+      android:layout_marginRight="35dp"
+      android:layout_gravity="center"
+      android:layout_marginBottom="18dp"
+      android:layout_marginTop="70dp"
+      android:background="@drawable/shops_shape_one"
+      android:gravity="center"
+      android:text="提交"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      />
+</LinearLayout>

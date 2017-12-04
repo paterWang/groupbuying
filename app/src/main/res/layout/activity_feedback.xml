@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/default_bg"
+              android:orientation="vertical"
+>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="请描述出详细的场景及问题，以便于程序员为您解决哦！"
+        android:minHeight="150dp"
+        android:textColorHint="@color/edit_hint"
+        android:textSize="13dp"
+    />
+
+    <Button
+        android:id="@+id/button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_shape_blue"
+        android:text="提交"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+    />
+
+</LinearLayout>

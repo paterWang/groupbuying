@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <LinearLayout
+      android:layout_above="@+id/rl_bottom_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      tools:context="com.feitianzhu.fu700.me.ui.MyWalletActivity"
+      >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/sf_blue"
+        android:navigationIcon="@mipmap/ic_back"
+        android:paddingRight="10dp"
+        app:navigationIcon="@mipmap/ic_back"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="总积分"
+          android:textColor="@color/white"
+          android:textSize="@dimen/sf_title_size"
+          />
+      <TextView
+          android:id="@+id/tv_detail"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical|right"
+          android:text="规则"
+          android:textColor="@color/white"
+          android:textSize="@dimen/sf_title_sub_size"
+          />
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#178AE0"
+        android:layout_height="40dp"
+        >
+      <RelativeLayout
+          android:id="@+id/txt_money"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="释放红利"
+            android:singleLine="true"
+            android:ellipsize="end"
+
+            android:textColor="@drawable/wallet_textcolor"
+            android:textSize="@dimen/sf_font_medum"
+            />
+        <ImageView
+            android:id="@+id/iv_trigleOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jiantou"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+      </RelativeLayout>
+      <RelativeLayout
+          android:id="@+id/txt_my_wallet"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="推广红利"
+            android:singleLine="true"
+            android:ellipsize="end"
+
+            android:textColor="@drawable/wallet_textcolor"
+            android:textSize="@dimen/sf_font_medum"
+            />
+        <ImageView
+            android:id="@+id/iv_trigleTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/jiantou"
+            />
+      </RelativeLayout>
+      <RelativeLayout
+          android:id="@+id/txt_my_hehuoren"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="合伙人红利"
+            android:singleLine="true"
+            android:ellipsize="end"
+
+            android:textColor="@drawable/wallet_textcolor"
+            android:textSize="@dimen/sf_font_medum"
+            />
+        <ImageView
+            android:id="@+id/iv_trigleThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/jiantou"
+            />
+      </RelativeLayout>
+      <RelativeLayout
+          android:id="@+id/txt_my_gongxiang"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="共享红利"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@drawable/wallet_textcolor"
+            android:textSize="@dimen/sf_font_medum"
+            />
+        <ImageView
+            android:id="@+id/iv_trigleFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/jiantou"
+            />
+      </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v4.view.ViewPager>
+
+
+
+  </LinearLayout>
+
+</RelativeLayout>
+

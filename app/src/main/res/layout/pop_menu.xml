@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:background="@drawable/ic_bg_contextmenu"
+
+    >
+
+    <LinearLayout
+                android:id="@+id/menu1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:drawableLeft="@drawable/icon_bianji"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="修改备注"
+                    android:layout_marginLeft="10dp"
+                    />
+            </LinearLayout>
+    <LinearLayout
+        android:id="@+id/menu2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:drawableLeft="@drawable/icon_jubao2"
+            android:drawablePadding="@dimen/dp_10"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="投诉举报"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

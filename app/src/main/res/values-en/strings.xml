@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">福700</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="no_account">注册</string>
+    <string name="resend">重新发送</string>
+    <string name="please_input_phone">请输入手机号码</string>
+    <string name="please_input_correct_phone">请输入正确的手机号码</string>
+    <string name="sign_in">登录</string>
+    <string name="current_account">请输入绑定的有效手机号，并获取验证码，验证成功后修改密码即可。</string>
+    <string name="current_phone">当前手机号码 %s</string>
+    <string name="confim">确认</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_password">确认新密码</string>
+    <string name="password">密码</string>
+    <string name="search">搜索</string>
+    <string name="reject_reason">驳回原因：%s</string>
+    <string name="please_input_code">请输入验证码</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_input_password2">请再次输入密码</string>
+    <string name="please_input_oldpassword">请输入旧密码</string>
+    <string name="please_input_newpassword">请输入新密码</string>
+    <string name="please_input_newpassword2">请输入新的确认密码</string>
+    <string name="please_input_check_password">两次输入的密码不一致</string>
+    <string name="title_activity_change_phone1">ChangePhone1Activity</string>
+    <string name="hint_input_login_pwd">输入6~20位字母、数字、符号</string>
+    <string name="hint_input_second_pwd">输入6位数字</string>
+    <string name="set_second_pwd">设置二级密码</string>
+    <string name="change_ok">修改成功</string>
+    <string name="change_failure">修改失败</string>
+    <string name="get_second_pwd">找回二级密码</string>
+    <string name="reset_second_pwd">重设二级密码</string>
+    <string name="content_must_not_be_null">内容不能为空</string>
+    <string name="clean_cache_successfully">清除缓存成功</string>
+    <string name="withdraw_tips">本次可转出%1$s元，兑换手续费%2$s元</string>
+    <string name="helpful_hints">友情提示：公司针对非合作商户进行消费储值计划。请认真
+  填写商户名称，商户地址，商品名称，实际消费金额。并上传消费场所照片，消费实物照片一级消费发票。
+  所上传发票照片须为机打发票并且发票日期不得超过三天。会员需缴纳消费金额的%s作为手续费，参与消费
+  储值计划。请在缴纳手续费前，认真阅读此说明。</string>
+    <string name="fandian">返%sPV</string>
+</resources>

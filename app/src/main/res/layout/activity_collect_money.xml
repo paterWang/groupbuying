@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/txt_blue"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="140dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_localName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="七天连锁酒店"
+                android:textColor="@color/txt_big"
+                android:layout_marginTop="40dp"
+                android:textSize="@dimen/text_size_body"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bj"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/txt_big"
+                android:textSize="@dimen/text_size_body"
+                />
+
+        </LinearLayout>
+        <com.feitianzhu.fu700.view.CircleImageView
+            android:id="@+id/civ_pic"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="47dp"
+            android:src="@drawable/pic_touxiang"
+            android:layout_gravity="center_horizontal"
+            />
+    </FrameLayout>
+</LinearLayout>

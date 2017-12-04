@@ -1,0 +1,117 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context="com.feitianzhu.fu700.me.ui.MyMoneyFragment"
+        android:layout_above="@+id/rl_bottom_container"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:background="@color/sf_blue"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/textView13" />
+
+            <RelativeLayout
+                android:id="@+id/rl_release_totaldetail"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:background="@drawable/release_write"
+                >
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待释放积分:"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/tv_name_num"
+                    android:layout_toRightOf="@id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/bt_partner"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/release_bonus_middle_normal"
+                        android:text="分红"
+                        android:textColor="#fffff6"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/bt_volenteer"
+                        />
+                    <Button
+                        android:id="@+id/bt_volenteer"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/release_bonus_button_click"
+                        android:text="推广"
+                        android:textColor="#fffff6"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/recyclerview_volunteers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#303133"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转入余额"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>
+

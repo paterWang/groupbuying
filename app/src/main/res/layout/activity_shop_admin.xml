@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.feitianzhu.fu700.me.ui.ShopShowNoCreateActivity"
+    >
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/sf_blue"
+      android:navigationIcon="@mipmap/ic_back"
+      app:navigationIcon="@mipmap/ic_back"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="商铺管理"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+
+  </android.support.v7.widget.Toolbar>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="vertical"
+
+      app:layout_constraintTop_toBottomOf="@+id/toolbar"
+      >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/pic_chuangjianshangpu"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="您还没有创建自己的商铺，赶紧创建吧"
+        android:textColor="@color/sf_black"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/btn_create"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/shops_shape_one"
+        android:gravity="center"
+        android:text="创建商铺"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+  </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

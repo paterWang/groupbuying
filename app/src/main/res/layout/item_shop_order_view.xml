@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.feitianzhu.fu700.view.CircleImageView
+            android:id="@+id/item_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="周文"
+                android:textColor="@color/sf_black"
+                android:textSize="@dimen/sf_font_medum" />
+
+            <TextView
+                android:id="@+id/item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2017-18-19"
+                android:textSize="@dimen/sf_font_smaller" />
+        </LinearLayout>
+          <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_height="match_parent"
+              > 
+              <TextView
+              android:id="@+id/item_money"
+              android:layout_width="wrap_content"
+                  android:gravity="center"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="5dp"
+              android:text="10000"
+              android:textColor="@color/sf_red"
+              android:textSize="@dimen/sf_font_medum" />
+              <TextView
+                  android:layout_width="60dp"
+                  android:id="@+id/to_revalate"
+                  android:layout_height="26dp"
+                  android:text="评价"
+                  android:gravity="center"
+                  android:layout_marginTop="5dp"
+                  android:textColor="@color/white"
+                  android:background="@drawable/button_shape_blue"
+                  />
+              
+          </LinearLayout>
+      
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="70dp"
+        android:background="@color/sf_divider" />
+
+</LinearLayout>

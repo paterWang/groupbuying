@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.feitianzhu.fu700">
+
+  <!-- 这个权限用于进行网络定位 -->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <!-- 这个权限用于访问GPS定位 -->
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+  <!-- 用于读取手机当前的状态 -->
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <!-- 访问网络，网络定位需要上网 -->
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <!-- SD卡读取权限，用户写入离线定位数据 -->
+  <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="android.permission.GET_TASKS"/>
+  <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+  <!-- 打电话的权限 -->
+  <uses-permission android:name="android.permission.CALL_PHONE"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED"/>
+  <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+  <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL"/>
+  <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+  <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+
+  <application
+      android:name=".App"
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme">
+    <meta-data
+        android:name="UMENG_APPKEY"
+        android:value="59b6a983c62dca7934000a75"/>
+    <meta-data
+        android:name="UMENG_MESSAGE_SECRET"
+        android:value="e20737a32765ce2e866b103e4921b3ff"/>
+    <meta-data
+        android:name="UMENG_CHANNEL"
+        android:value="Channel ID"/>
+    <meta-data
+        android:name="com.baidu.lbsapi.API_KEY"
+        android:value="sj7Duk6sDsVFhabLZKKP04lb4bka9hPh"/>
+
+    <activity
+        android:name=".MainActivity"
+        android:launchMode="singleTask"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".shop.ui.ShopsActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.testActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.ShopsCreateActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.EditServiceActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".login.LoginActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:windowSoftInputMode="adjustResize"/>
+    <activity
+        android:name=".login.RegisterActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustResize"/>
+    <activity
+        android:name=".settings.ChangePasswordActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".business.BusinessListActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.BalanceRechargeActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.MyWalletActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.PersonInfoActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.VerificationActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".splash.SplashActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:theme="@style/SplashTheme">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity
+        android:name=".splash.SplashActivity2"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+    <activity
+        android:name=".payforme.PayForMeActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".payforme.PayForMeRejectActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.ScannerActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.BuyServiceActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.PushServiceActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.EditCardActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.ServiceDetailActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".shop.ui.ShopTypeActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.MyFriendActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".shop.ui.ShopSearchActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.ShopDetailActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.PersonalCenterActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.InterestHobbiesActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.ChooseIndustryDirectionActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.EditPersonSignActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.OrderActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.MineOrderActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.totalScore.BalanceActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.TotalScoreActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.consumeralliance.NewBecomeVolunteerActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.consumeralliance.UnionlevelActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.totalScore.HotServiceActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".home.NoticeActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.totalScore.ApplyRecordActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.totalScore.SelectPayActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.totalScore.TransferVoucherActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.totalScore.MineQrcodeActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.totalScore.MineCollectionActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".login.ForgetPasswordActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"/>
+
+    <service
+        android:name="com.baidu.location.f"
+        android:enabled="true"
+        android:process=":remote"/>
+
+    <activity
+        android:name=".settings.SettingsActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".settings.ChangePhone1Activity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".settings.ChangePhone2Activity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".settings.GetPasswordActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".settings.FeedbackActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.ShopsEditActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.SeviceAdminActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".bankcard.MyBankCardActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".bankcard.WithdrawResultActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".bankcard.AddBankCardActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".bankcard.SelectBankCardActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".bankcard.WithdrawActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.MyVerificationActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.CollectMoneyActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.ShopRecordActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".payforme.PayForMeRecordActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.ShopRecordDetailActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.ShopShowNoCreateActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".shop.ui.ShopsPayActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.WalletPayActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".home.WebViewActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.UnionApplyRecordActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.UnionSearchActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".common.base.LazyWebActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+
+    <!-- ShareSdk  start -->
+    <activity
+        android:name="com.mob.tools.MobUIShell"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+    <!-- 微信分享回调 -->
+    <activity
+        android:name=".wxapi.WXEntryActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:exported="true"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    <activity
+        android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
+        android:launchMode="singleTask"
+        android:noHistory="true">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+
+        <data android:scheme="tencent1106417056"/>
+      </intent-filter>
+    </activity>
+
+    <meta-data
+        android:name="Mob-AppKey"
+        android:value="210873cbde0f1"/>
+    <meta-data
+        android:name="Mob-AppSecret"
+        android:value="711bb6d88463f07050cfe55ff338af00"/>
+    <!-- ShareSdk  end -->
+
+    <activity
+        android:name=".shop.ui.ShopReportActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".shop.ui.HotShopActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".shop.ui.MyOrderActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".huanghuali.HuangHuaLiHTMLActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".huanghuali.HuangHuaLiRecordActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.GetMoneyActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".me.ui.totalScore.ReleaseTotalScoreActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".wxapi.WXPayEntryActivity"
+        android:exported="true"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".me.ui.OrdeRevaluateActivity"
+              android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+              android:screenOrientation="portrait">
+    </activity>
+    <!--支付宝支付-->
+    <activity
+        android:name="com.alipay.sdk.app.H5PayActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:exported="false"
+        android:screenOrientation="behind"
+        android:windowSoftInputMode="adjustResize|stateHidden" >
+    </activity>
+    <activity
+        android:name="com.alipay.sdk.app.H5AuthActivity"
+        android:configChanges="orientation|keyboardHidden|navigation"
+        android:exported="false"
+        android:screenOrientation="behind"
+        android:windowSoftInputMode="adjustResize|stateHidden" >
+    </activity>
+    <service android:name="com.feitianzhu.fu700.MyPushIntentService" />
+  </application>
+
+</manifest>

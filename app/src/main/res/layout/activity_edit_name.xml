@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:id="@+id/et_inputName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入内容"
+        android:textColorHint="@color/edit_hint"
+        android:textColor="@color/txt_big"
+        android:gravity="left|center_vertical"
+        android:textSize="@dimen/dp_16"
+        android:background="@color/white"
+        />
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape_blue"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
+        />
+</LinearLayout>
